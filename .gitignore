@@ -1,0 +1,14 @@
+# Node.js dependencies and logs
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables (sensitive data)
+.env
+.env.local
+
+# Logs (if your app generates logs)
+*.log
+
+# IDE/Editor (keep if you use VS Code)
+.vscode/
