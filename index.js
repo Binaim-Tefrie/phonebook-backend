@@ -15,6 +15,8 @@ app.use(morgan('tiny'))
 app.use(morgan(customLogger))
 app.use(cors())
 
+app.use(express.static('dist')) //app.use(express.static('dist'))
+
 //Custum function to be used in Morgan 
 function customLogger(tokens, req, res) {
   return [
@@ -48,10 +50,6 @@ let data = [
       "number": "39-23-6423122"
     }
 ]
-
-app.get('/', (req, res) => {
-	res.send('<h1>Welcome to Part3</h1>')
-})
 
 //Phonebook data
 app.get('/api/persons', (req, res) => {
